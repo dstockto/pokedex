@@ -12,13 +12,13 @@ npm run start
 This command will run the webpack dev server, defaults to localhost:8080
 
 ## What is included in this package
-1.**PRODUCTION**
+1. **PRODUCTION** 
     * React (`npm i react -S`)
     * ReactDOM (`npm i react-dom -S`)
     * React Redux (`npm i react-redux -S`)
     * React Router (`npm i react-router -S`)
     * Redux (`npm i redux -S`)
-2. **DEVELOPMENT**
+2. **DEVELOPMENT** 
     * Babel (`npm i babel-core babel-loader babel-preset-es2015 babel-preset-react -D`)
     * Babel Additional Presets (`npm i babel-preset-stage-0 babel-preset-stage-1 babel-preset-react-hmre -D`)
     * Chai (`npm i chai -D`)
