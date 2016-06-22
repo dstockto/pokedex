@@ -1,13 +1,13 @@
 {
-  "name": "React Redux Starter",
+  "name": "react-pokedex",
   "version": "0.0.1",
-  "description": "React Redux Starter",
+  "description": "Lets build a pokedex using react",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --colors",
     "test": "mocha './__tests__/**/*.js' --compilers js:babel-core/register"
   },
-  "author": "Mansoor Bahramand",
+  "author": "developerX",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
