@@ -11,20 +11,29 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel'
-    }]
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'react-hot!babel'
+      },
+    {
+      test: /\.scss$/,
+      loader: 'style!css!sass'
+    }
+  ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.DefinePlugin({
+      'process.env' : {
+        'NODE_ENV' : '"dev"'
+      }
+    }),
   ],
   devServer: {
-    hot: true,
-    colors: true,
     inline: true,
     historyApiFallback: true,
     contentBase: './'
