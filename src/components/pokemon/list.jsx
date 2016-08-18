@@ -8,9 +8,10 @@ const List = ({source, handleClick}) => {
             {s.map(pokemon => {
                 return (
                     <li key={uuid.v1()}
-                        onClick={() => { handleClick(pokemon.url) } }
-                    >
-                        {pokemon.name}
+                        onClick={() => { handleClick(pokemon.url) } }>
+                        <button type="button">
+                            {pokemon.name}
+                        </button>
                     </li>
                 );
             })}
